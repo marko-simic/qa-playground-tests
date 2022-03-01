@@ -5,7 +5,8 @@ test.describe("Verify Account", () => {
     await page.goto("apps/verify-account");
     await expect(page.locator('text="Verify Your Account"')).toBeVisible();
 
-    const codeFields = page.locator(".code");
+    const codeFields = page.locator(".code"); // Get locators of all input fields
+
     for (let index = 0; index < (await codeFields.count()); index++) {
       codeFields.nth(index).type("9");
       await expect(codeFields.nth(index)).toHaveValue("9");
@@ -19,7 +20,7 @@ test.describe("Verify Account", () => {
     await expect(page.locator('text="Verify Your Account"')).toBeVisible();
 
     let codeValue = "0";
-    const codeFields = page.locator(".code");
+    const codeFields = page.locator(".code"); // Get locators of all input fields
     for (let index = 0; index < (await codeFields.count()); index++) {
       while (codeValue != "9") {
         await codeFields.nth(index).press("ArrowUp", { delay: 100 });
