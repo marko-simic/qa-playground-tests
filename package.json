@@ -1,0 +1,16 @@
+{
+  "name": "qa-playground-tests",
+  "version": "1.0.0",
+  "description": "Playwright end-to-end tests for the QAPlayground.dev mini web apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "headed": "npx playwright test --headed"
+  },
+  "keywords": [],
+  "author": "Marko Simic",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.19.2"
+  }
+}
