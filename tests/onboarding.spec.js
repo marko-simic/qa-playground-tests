@@ -9,6 +9,7 @@ test.describe("Onboarding", () => {
     const modal = await page.locator("#active").isChecked();
     const closeButton = page.locator('[for="active"]');
 
+    // Check if modal is displayed
     if (modal) {
       await closeButton.click();
       await expect(title).toHaveText("Welcome Peter Parker! 🕷🎉");
