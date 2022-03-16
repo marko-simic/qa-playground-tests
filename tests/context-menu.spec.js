@@ -19,8 +19,8 @@ test.describe("Context Menu", () => {
 
     // Validate sub-menu items
     for (let index = 0; index < subMenuItems.length; index++) {
-      await page.click("body", { button: "right", delay: 500 }); // right click on the page
-      await page.locator('text="Share"').click({ delay: 300 }); // Opens Share sub-menu
+      await page.click("body", { button: "right", delay: 300 }); // right click on the page
+      await page.locator('text="Share"').hover(); // Opens Share sub-menu
       await page.locator(".share >> text=" + subMenuItems[index]).click();
       await expect(message).toContainText(subMenuItems[index]);
     }
