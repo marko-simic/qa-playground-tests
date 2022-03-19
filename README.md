@@ -1,4 +1,4 @@
-# End-to-end tests for the [QAPlayground.dev](https://qaplayground.dev.dev) mini web apps
+# End-to-end tests for the [QAPlayground.dev](https://qaplayground.dev) mini web apps
 
 With the help of a great [Playwright](https://playwright.dev), I managed to solve all the test automation challenges. 😉
 
