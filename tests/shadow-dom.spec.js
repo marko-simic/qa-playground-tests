@@ -9,6 +9,6 @@ test.describe("Shadow DOM", () => {
 
     const progressBar = page.locator("progress-bar");
 
-    await expect(progressBar).toHaveAttribute("percent", "95", { timeout: 7000 });
+    await expect(progressBar).toHaveAttribute("percent", "95", { timeout: 9000 });
   });
 });

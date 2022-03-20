@@ -20,7 +20,7 @@ test.describe("Download", () => {
     const fileName = download.suggestedFilename(); // Returns the file name from the server
     expect(fileName).toMatch("sample.pdf"); // Asserts file name
 
-    // Saves download file
+    // Save downloaded file
     await download.saveAs(fileName);
 
     const fileSizeInBytes = fs.statSync(fileName).size; // Get saved file size

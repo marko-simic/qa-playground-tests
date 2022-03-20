@@ -12,7 +12,7 @@ test.describe("Context Menu", () => {
 
     // Validate menu items
     for (let index = 0; index < menuItems.length; index++) {
-      await page.click("body", { button: "right", delay: 500 }); // right click on the page
+      await page.click("body", { button: "right", delay: 300 }); // right click on the page
       await page.locator("text=" + menuItems[index]).click();
       await expect(message).toContainText(menuItems[index]);
     }
