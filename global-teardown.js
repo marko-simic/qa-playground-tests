@@ -1,7 +1,7 @@
 const { core } = require("@actions/core");
 
 console.log("I'm trying to do an experiment");
-await core.summary
+core.summary
   .addHeading("Test Results")
   .addCodeBlock(generateTestResults(), "js")
   .addTable([
