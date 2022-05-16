@@ -1,4 +1,5 @@
-import * as core from "@actions/core";
+const { core } = require("@actions/core");
+
 console.log("I'm trying to do an experiment");
 await core.summary
   .addHeading("Test Results")
