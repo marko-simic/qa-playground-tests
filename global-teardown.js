@@ -1,4 +1,5 @@
 import * as core from "@actions/core";
+console.log("I'm trying to do an experiment");
 await core.summary
   .addHeading("Test Results")
   .addCodeBlock(generateTestResults(), "js")
@@ -13,3 +14,4 @@ await core.summary
   ])
   .addLink("View staging deployment!", "https://github.com")
   .write();
+console.log("I'm trying to do an experiment 2");
