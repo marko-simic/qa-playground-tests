@@ -25,7 +25,10 @@ test.describe.serial("Budget Tracker", () => {
 
       await page.reload() // Reload the page to verify persistent of data
 
-      await expect(record.date).toHaveValue(data[index].expected_date)
+      const expectedDate = user.convertDate(data[index].date)
+      const receivedDate = user.convertDate(await record.date.inputValue())
+      expect(receivedDate).toMatch(expectedDate)
+
       await expect(record.description).toHaveValue(data[index].description)
       await expect(record.type).toHaveValue(data[index].type)
       await expect(record.amount).toHaveValue(data[index].amount.toString())

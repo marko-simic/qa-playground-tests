@@ -11,9 +11,9 @@
   "author": "Marko Simic",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.24.1"
+    "@playwright/test": "^1.33.0"
   },
   "dependencies": {
-    "playwright": "^1.24.1"
+    "playwright": "^1.33.0"
   }
 }

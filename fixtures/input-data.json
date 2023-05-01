@@ -1,56 +1,48 @@
 [
   {
-    "date": "01/06/2022",
-    "expected_date": "2022-01-06",
+    "date": "2023-07-01",
     "description": "Salary",
     "type": "income",
     "amount": 5000
   },
   {
-    "date": "01/01/2022",
-    "expected_date": "2022-01-01",
+    "date": "2023-06-08",
     "description": "Dividends",
     "type": "income",
     "amount": 500
   },
   {
-    "date": "01/06/2022",
-    "expected_date": "2022-01-06",
+    "date": "2023-08-20",
     "description": "Mortgage",
     "type": "expense",
     "amount": 1500
   },
   {
-    "date": "01/06/2022",
-    "expected_date": "2022-01-06",
+    "date": "2023-09-19",
     "description": "Car",
     "type": "expense",
     "amount": 500
   },
   {
-    "date": "01/06/2022",
-    "expected_date": "2022-01-06",
+    "date": "2023-07-15",
     "description": "Phone",
     "type": "expense",
     "amount": 100
   },
   {
-    "date": "01/06/2022",
-    "expected_date": "2022-01-06",
+    "date": "2023-11-17",
     "description": "Health Insurance",
     "type": "expense",
     "amount": 1000
   },
   {
-    "date": "01/06/2022",
-    "expected_date": "2022-01-06",
+    "date": "2023-10-26",
     "description": "Food",
     "type": "expense",
     "amount": 2000
   },
   {
-    "date": "01/06/2022",
-    "expected_date": "2022-01-06",
+    "date": "2023-08-11",
     "description": "Entertainment",
     "type": "expense",
     "amount": 100
