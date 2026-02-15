@@ -7,14 +7,11 @@ test.describe("New Tab", () => {
     const openTabButton = page.getByRole("link", { name: "Open New Tab" });
     await expect(openTabButton).toBeVisible();
 
-    // Wait for new page event
-    const pagePromise = context.waitForEvent("page");
-
-    // Open new page
-    await openTabButton.click();
-
-    // Resolve promise to interact with new tab
-    const newPage = await pagePromise;
+    // Open new tab and catch the new Page object
+    const [newPage] = await Promise.all([
+      context.waitForEvent("page"),
+      openTabButton.click(),
+    ]);
 
     // Assert new page heading has correct text
     await expect(newPage.getByRole("heading")).toHaveText("Welcome to the new page!");
